@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 3000;
 
 const allowedOrigins = [
   "http://localhost:5173",
+  "https://aura-frontend-ojiy.onrender.com"
 ];
 
 app.use(
@@ -47,4 +48,5 @@ app.use("/interview", InterViews)
 app.listen(PORT, () => {
   console.log(` Server running on http://localhost:${PORT}`);
 });
+
 
