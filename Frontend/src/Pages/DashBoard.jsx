@@ -207,13 +207,19 @@ export default function DashBoard() {
                 hover:shadow-2xl hover:-translate-y-1 
                 hover:bg-white/15 transform transition-all duration-300"
               >
-                <h3 className="text-xl font-semibold text-white">
-                  {item.JobPosition}
-                </h3>
+                <div className="flex justify-between items-center">
+                  <h3 className="text-xl font-semibold text-white">
+                    {item.JobPosition}
+                  </h3>
+
+                  <button className="bg-red-500 p-2 rounded-xl  font-medium">
+                    Delete
+                  </button>
+                </div>
 
                 <p className="text-gray-300 mt-2">
                   <span className="font-semibold text-gray-200">
-                    Description:{" "}
+                    Description:
                   </span>
                   {item.JobDescription}
                 </p>
