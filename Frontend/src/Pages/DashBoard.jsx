@@ -124,7 +124,7 @@ export default function DashBoard() {
 
         {/* PROFILE */}
         <div className="flex items-center gap-3 bg-gray-50 dark:bg-[#0d0d0f] p-1.5 pr-3 rounded-full border border-gray-200 dark:border-gray-800">
-          {/* Avatar Group */}
+          {/* Avatar Group (content omitted) */}
           <div className="relative shrink-0">
             <img
               src={ProfileImage}
@@ -141,8 +141,10 @@ export default function DashBoard() {
               className="appearance-none bg-transparent text-sm font-medium text-gray-700 dark:text-gray-200 focus:outline-none cursor-pointer pr-6"
               defaultValue="Ashwani"
             >
-              <option value="Ashwani" disabled className="text-gray-900">
-                Ashwani
+              <option value="Hello" disabled className="text-gray-900">
+                <span className="text-red-500">
+                  {profile?.firstName || "User"}
+                </span>
               </option>
               <option value="edit" className="text-gray-800">
                 Edit Profile
@@ -152,7 +154,7 @@ export default function DashBoard() {
               </option>
             </select>
 
-            {/* Custom Arrow to hide the ugly browser default */}
+            {/* Custom Arrow (content omitted) */}
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center text-gray-500">
               <svg
                 className="h-4 w-4 fill-current"
